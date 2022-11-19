@@ -1,0 +1,20 @@
+JavascriptExecutor in Selenium to refresh the browser window
+js.executeScript(“location.reload()”);
+
+JavascriptExecutor in Selenium to send text
+js.executeScript(“document.getElementByID(‘element id ’).value = ‘xyz’;”);
+
+Generate Alert Pop Window
+Js.executeScript(“alert(‘hello world’);”);
+
+Get InnerText of a Webpage
+string sText =  js.executeScript(“return document.documentElement.innerText;”).toString();
+
+Get Title of a WebPage
+string sText =  js.executeScript(“return document.title;”).toString();
+
+Scroll Page vertically
+js.executeScript(“window.scrollBy(0,150)”);
+
+Click element
+js.executeScript("arguments[0].click();", <element_name>);
